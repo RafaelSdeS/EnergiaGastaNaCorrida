@@ -1,0 +1,43 @@
+<html>
+    <meta charset=utf-8>
+        <link rel="stylesheet" type=text/css href="style.css">
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <h1 class="title">Cálculo de energia na corrida</h1>
+        <form>
+            <div id=id1>
+            <table>
+               <tr>
+                   <th colspan='2'>Dados</th>
+            <tr><td rowspan='2'>Seu peso (Kg)</td> <td><input type='number' id='peso' step="0.01" style="width: 255px"></td>
+                <tr>
+            <tr><td>Tempo de corrida (min)</td> <td><input type='number' id='tempo' step='0.01' style="width: 255px"></td>
+            <tr><td>Sua velocidade média (m/s)</td><td> <input type="number" id=ms step="0.01" style="width: 255px"></td>
+            <tr><td>Sua altura (m)</td><td><input type='number' id='altura' step='0.01' style="width: 255px"></td>
+        </tr>
+                </table>    
+            </div>
+            <br><br>
+            <div id=id1>
+                <input class="container" style="border-radius: 10px; display: block; margin: auto;"type="button" onclick='a()' value="Calcular">
+            </div>
+        </form>
+        </body><br><br>
+        <div id=id1>
+        <table >
+            <tr>
+                <th style="width: 260px;">Resultados</th><tr>
+    <tr><td>Força exercida (N)</td>
+    <td id=força></td>
+    <tr><td>Energia (KCal)</td>
+    <td id=energia></td>
+    <tr><td>Potência (KCal/s) </td>
+    <td id=potência></td>
+    <tr><td>Equivalente em lâmpadas de 10W </td> 
+     <td id=lamp></td>
+            </tr>
+        </div>
+     </table>
+
+</html>
